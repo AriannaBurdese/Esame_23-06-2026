@@ -58,7 +58,8 @@ class View:
         self._ddUtente = ft.Dropdown(
             label="Utente iniziale",
             width=400,
-            disabled=True
+            disabled=True,
+            on_change = self._controller.handler_read_utenti
         )
 
         self._txtL = ft.TextField(
